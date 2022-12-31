@@ -41,3 +41,11 @@ conda env export --from-history --file enviroment.yml
 
 ### Hooks
 
+En la carpeta de hooks se crearán dos archivos:
+- <b>pre_gen project.py<b>: Se carga la configuración automática que el usuario quiera que se haga antes de iniciar el proyecto. Por ejemplo restricciones en el nombre de la carpeta y algunos mensajes 
+- <b>post_gen project.py<b>: Se carga la configuración automática que el usuario quiera que se haga después de iniciar el proyecto. Por ejemplo inicializar un repositorio de git
+
+### Los usuarios podrán copiar mi plantilla usando el siguiente código
+```bash
+cookiecutter https://github.com/Zubiarrain/cookiecutter-personal
+```
